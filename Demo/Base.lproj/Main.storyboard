@@ -17,11 +17,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8TU-70-5wJ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DxZ-8A-ahx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <imageReference key="image" image="school"/>
-                            </imageView>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9ad-tI-v5t">
+                                        <rect key="frame" x="375" y="0.0" width="1125" height="667"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8TU-70-5wJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <imageReference key="image" image="school"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DXG-TS-ex7">
+                                                <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                                                <imageReference key="image" image="corridor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RuL-nE-jDc">
+                                                <rect key="frame" x="750" y="0.0" width="375" height="667"/>
+                                                <imageReference key="image" image="platform"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="po0-WQ-J5l" firstAttribute="bottom" secondItem="9ad-tI-v5t" secondAttribute="bottom" id="65c-1n-bud"/>
+                                    <constraint firstItem="po0-WQ-J5l" firstAttribute="top" secondItem="9ad-tI-v5t" secondAttribute="top" id="Kn1-cO-7Hw"/>
+                                    <constraint firstItem="po0-WQ-J5l" firstAttribute="trailing" secondItem="9ad-tI-v5t" secondAttribute="trailing" id="Mgd-9Z-reG"/>
+                                    <constraint firstItem="8TU-70-5wJ" firstAttribute="width" secondItem="802-yJ-dy1" secondAttribute="width" id="OYz-ty-QBe"/>
+                                    <constraint firstItem="8TU-70-5wJ" firstAttribute="height" secondItem="802-yJ-dy1" secondAttribute="height" id="j23-tF-rPu"/>
+                                    <constraint firstItem="po0-WQ-J5l" firstAttribute="leading" secondItem="9ad-tI-v5t" secondAttribute="leading" id="kBt-YE-1jl"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="po0-WQ-J5l"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="802-yJ-dy1"/>
+                            </scrollView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="k3s-b5-iIj">
                                 <rect key="frame" x="150" y="77" width="75" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,6 +96,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DxZ-8A-ahx" secondAttribute="trailing" id="BBC-Xj-qD9"/>
+                            <constraint firstAttribute="bottom" secondItem="DxZ-8A-ahx" secondAttribute="bottom" id="IZd-F3-NAu"/>
+                            <constraint firstItem="DxZ-8A-ahx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kfg-hy-TTl"/>
+                            <constraint firstItem="DxZ-8A-ahx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dfY-Nv-gA2"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="flashlight" destination="EXw-hu-wJe" id="oZI-2U-qpo"/>
@@ -83,6 +116,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="corridor" width="3347" height="4184"/>
+        <image name="platform" width="2698" height="4226"/>
         <image name="school" width="2474" height="2403"/>
         <image name="transparent" width="1920" height="1080"/>
         <systemColor name="systemBackgroundColor">
