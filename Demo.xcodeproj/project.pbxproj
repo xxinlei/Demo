@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F782D0CB269C16F100CB3983 /* NemukeMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F782D0CA269C16F100CB3983 /* NemukeMedium.otf */; };
 		F7E0C63426987EE000AF83AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0C63326987EE000AF83AC /* AppDelegate.swift */; };
 		F7E0C63626987EE000AF83AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0C63526987EE000AF83AC /* SceneDelegate.swift */; };
 		F7E0C63826987EE000AF83AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0C63726987EE000AF83AC /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F782D0CA269C16F100CB3983 /* NemukeMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NemukeMedium.otf; sourceTree = "<group>"; };
 		F7E0C63026987EE000AF83AC /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E0C63326987EE000AF83AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7E0C63526987EE000AF83AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F7E0C63C26987EE100AF83AC /* Assets.xcassets */,
 				F7E0C63E26987EE100AF83AC /* LaunchScreen.storyboard */,
 				F7E0C64126987EE100AF83AC /* Info.plist */,
+				F782D0CA269C16F100CB3983 /* NemukeMedium.otf */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E0C64026987EE100AF83AC /* LaunchScreen.storyboard in Resources */,
+				F782D0CB269C16F100CB3983 /* NemukeMedium.otf in Resources */,
 				F7E0C63D26987EE100AF83AC /* Assets.xcassets in Resources */,
 				F7E0C63B26987EE000AF83AC /* Main.storyboard in Resources */,
 			);
@@ -292,6 +296,10 @@
 				DEVELOPMENT_TEAM = 69M4JWQG8L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
+				INFOPLIST_KEY_CFBundleExecutable = Demo;
+				INFOPLIST_KEY_CFBundleName = Demo;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +328,10 @@
 				DEVELOPMENT_TEAM = 69M4JWQG8L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
+				INFOPLIST_KEY_CFBundleExecutable = Demo;
+				INFOPLIST_KEY_CFBundleName = Demo;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

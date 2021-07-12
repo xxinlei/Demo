@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NemukeMedium.otf">
+            <string>NemukeMedium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -93,6 +98,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="transparent"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qyj-xf-JPS">
+                                <rect key="frame" x="16" y="587" width="78" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="button_1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7a-u8-wLn">
+                                <rect key="frame" x="16" y="585" width="78" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="8xz-18-c2w" kind="show" id="g98-G7-ZU9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -114,9 +138,153 @@
             </objects>
             <point key="canvasLocation" x="20" y="69.715142428785612"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="BAd-HK-5W6">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="8xz-18-c2w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aa6-aS-GgF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAH-DQ-UVG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iun-TU-eRg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="wJ2-tL-PqF"/>
+                                        </constraints>
+                                        <imageReference key="image" image="paper"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="除霊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8q-WW-EOA">
+                                        <rect key="frame" x="131" y="46" width="112" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NemukeMedium" family="NemukeMedium" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="光明真言" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uug-G7-u0z">
+                                        <rect key="frame" x="152" y="156" width="70" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.20392156862745098" green="0.24705882352941178" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="不動明王慈救呪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjb-zG-eCF">
+                                        <rect key="frame" x="126" y="296" width="122" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.2470588235" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="オン　アボキャ　ベイロシャノウ　マカボダラ　マニ　ハンドマジンバラ　ハラバリタヤ　ウン" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0xA-Qr-7mS">
+                                        <rect key="frame" x="26" y="195" width="323" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.2470588235" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="ナウマクサマンダ　バザラダン　センダンマカロシャダ　ソワタヤ　ウンタラタ　カン　マン" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GvM-bu-BrI">
+                                        <rect key="frame" x="27" y="325" width="323" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.2470588235" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qn0-zi-gTj">
+                                        <rect key="frame" x="26" y="444" width="323" height="131"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">天地玄宗，萬炁本根，廣修億劫，證吾神通，
+三界內外，唯道獨尊，體有金光，覆映吾身，
+視之不見，聽之不聞，包羅天地，養育群生，
+受持萬遍，身有光明，三界侍衛，五帝司迎，
+萬神朝禮，役使雷霆，鬼妖喪膽，精怪亡形，
+內有霹靂，雷神隱名，洞慧交徹，五炁騰騰，
+金光速現，覆護真人。急急如玉皇上帝律令敕。</string>
+                                        <color key="textColor" red="0.20392156859999999" green="0.2470588235" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="金光神咒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVb-WL-XtS">
+                                        <rect key="frame" x="152" y="415" width="70" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.2470588235" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="遺言" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1S-oG-ZTW">
+                                        <rect key="frame" x="170" y="649" width="35" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.2470588235" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="留" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXA-fG-wdW">
+                                        <rect key="frame" x="313" y="869" width="18" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.2470588235" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="這裡輸入遺言" translatesAutoresizingMaskIntoConstraints="NO" id="uuI-Sd-yR6">
+                                        <rect key="frame" x="26" y="693" width="323" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.2470588235" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oeb-0i-1eL">
+                                        <rect key="frame" x="208" y="862" width="97" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Iun-TU-eRg" firstAttribute="width" secondItem="qd2-y7-IFd" secondAttribute="width" id="1oU-zg-9ih"/>
+                                    <constraint firstItem="Iun-TU-eRg" firstAttribute="leading" secondItem="0DL-zi-BtT" secondAttribute="leading" id="7fR-Le-0b5"/>
+                                    <constraint firstItem="Iun-TU-eRg" firstAttribute="bottom" secondItem="0DL-zi-BtT" secondAttribute="bottom" id="VqC-PO-7dd"/>
+                                    <constraint firstItem="Iun-TU-eRg" firstAttribute="top" secondItem="0DL-zi-BtT" secondAttribute="top" id="W5N-dw-AZY"/>
+                                    <constraint firstItem="Iun-TU-eRg" firstAttribute="trailing" secondItem="0DL-zi-BtT" secondAttribute="trailing" id="xfK-1x-hGk"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0DL-zi-BtT"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="qd2-y7-IFd"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sun-Se-BiY">
+                                <rect key="frame" x="1" y="632" width="76" height="35"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain" title="＜戻る">
+                                    <color key="baseForegroundColor" red="0.42745098040000001" green="0.01176470588" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k1W-d1-PBu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MAH-DQ-UVG" firstAttribute="leading" secondItem="aa6-aS-GgF" secondAttribute="leading" id="Qp6-Xd-whJ"/>
+                            <constraint firstAttribute="bottom" secondItem="MAH-DQ-UVG" secondAttribute="bottom" id="TTp-pn-Ykb"/>
+                            <constraint firstItem="Sun-Se-BiY" firstAttribute="leading" secondItem="k1W-d1-PBu" secondAttribute="leading" constant="1" id="bFZ-VG-X3B"/>
+                            <constraint firstItem="MAH-DQ-UVG" firstAttribute="top" secondItem="aa6-aS-GgF" secondAttribute="top" id="xL8-s7-Yky"/>
+                            <constraint firstAttribute="bottom" secondItem="Sun-Se-BiY" secondAttribute="bottom" id="zC6-K1-Tlq"/>
+                            <constraint firstAttribute="trailing" secondItem="MAH-DQ-UVG" secondAttribute="trailing" id="zpF-NF-Gez"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y7r-c5-apk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZh-AC-adS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.79999999999995" y="69.715142428785612"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="button_1" width="152" height="79"/>
         <image name="corridor" width="3347" height="4184"/>
+        <image name="paper" width="3075" height="4599"/>
         <image name="platform" width="2698" height="4226"/>
         <image name="school" width="2474" height="2403"/>
         <image name="transparent" width="1920" height="1080"/>
